@@ -1,6 +1,9 @@
-# PROJECT-4-
+# PROJECT-4- 
 
-Contributers:
-Ibsar Hashmi, Omar Salloum, Olufemi Olarewaju, Saiyara Islam 
+# Contributers:
+- Ibsar Hashmi
+- Omar Salloum
+- Olufemi Olarewaju
+- Saiyara Islam 
 
 
