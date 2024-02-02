@@ -27,4 +27,32 @@
 - https://sell.amazon.com/blog/amazon-best-sellers-rank
 
 
+- Data classification
+    - Picked top 10 and bottom 10 products based on last month sold/reviews category to decide on classification targets
+            (The model demonstrates meaningful predictive power at least 75% classification accuracy)
+        
+        - Top 10 based on reviews
+            Electronics
+            Bedding
+            Home  Kitchen
+            Televisions  Video
+            Beauty
+            Data Storage
+            Automotive Care
+            Pet Supplies
+            Men's Shoes
+            Printer Accessories
+        
+        - Bottom 10 based on reviews
+            Industrial  Scientific
+            Motorcycle Accessories  Parts
+            Automotive Tires  Wheels
+            Dishwashing Supplies
+            Arts  Crafts Supplies
+            Men's Shoes
+            Women's Shoes
+            Fresh Flowers  Indoor Plants
+            Pogo Sticks  Hopping Toys
+            Swimming Pool  Outdoor Water Toys
+
 
