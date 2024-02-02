@@ -9,6 +9,36 @@
 # Overview 
 
 
+Model Optimization:
+Cutoff based on lowest value counts:
+
+categoryName	Value Counts
+Outdoor Lighting Products	53
+International Food Market	180
+
+
+Water Coolers, Filters  Cartridges	526
+Girls	559
+Pogo Sticks  Hopping Toys	688
+
+
+Handmade Toys  Games	1537
+TV Accessories	1656
+Scaffolding Equipment	1772
+Play Sets  Playground Equipment	1925
+Cigarette Lighters	2366
+Automotive Care	2514
+Job Site Lighting	2696
+Paper  Plastic Household Supplies	2843
+Breakfast Cereal	2949
+Outdoor DÃ©cor	3015
+Coffee, Tea  Espresso	3082
+Automotive	3169
+Women's Accessories	3483
+Home  Kitchen	3519
+Kitchen Storage  Organization	3551
+Bath Products	3590
+![image](https://github.com/Saiyara98/PROJECT-4-/assets/141441445/296bae43-9dd8-4044-ba3c-a2da821df260)
 
 
 
