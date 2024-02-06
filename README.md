@@ -49,6 +49,7 @@ performed a parquet transformation on the amazon dataset. removed asin, descript
 
 Discussed with the team to either use these data set or use the original and use different target and feature columns to run the neural network model as that works as well.
 
+datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7TZl_ZcG_hKWsbitTM4n4vgMRW?usp=sharing
 
 # Presentation 
 
