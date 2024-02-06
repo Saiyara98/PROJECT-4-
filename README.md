@@ -44,7 +44,10 @@ Bath Products	3590
 
 # Background Information 
 
+Dataset Optimization
+performed a parquet transformation on the amazon dataset. removed asin, description, product url, and image url. produced two csvs, one with boughtLastMonth column removed and the other without. cleared error rows with shifted data. total of 52582 rows cleared. datasets had rows with missing values that the model will pick up as 0s.
 
+Discussed with the team to either use these data set or use the original and use different target and feature columns to run the neural network model as that works as well.
 
 
 # Presentation 
