@@ -64,8 +64,6 @@ Discussed with the team to either use these data set or use the original and use
 
 datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7TZl_ZcG_hKWsbitTM4n4vgMRW?usp=sharing
 
-# Presentation 
-
 
 
 # Data classification
@@ -95,6 +93,9 @@ datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7T
             Fresh Flowers  Indoor Plants
             Pogo Sticks  Hopping Toys
             Swimming Pool  Outdoor Water Toys
+
+# Presentation 
+
 
 
 # Links 
