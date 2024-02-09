@@ -6,7 +6,7 @@
 - Olufemi Olarewaju
 - Saiyara Islam 
 
-# Overview 
+# Overview of the Analysis 
 
 
 Model Optimization:
@@ -40,6 +40,19 @@ Kitchen Storage  Organization	3551
 Bath Products	3590
 ![image](https://github.com/Saiyara98/PROJECT-4-/assets/141441445/296bae43-9dd8-4044-ba3c-a2da821df260)
 
+
+# Dataset Optimization 
+- A parquet transformation was applied to the Amazon dataset, removing unnecessary columns such as asin, description, product URL, and image URL.
+- Two CSVs were produced—one with the 'boughtLastMonth' column removed and another without.
+- Error rows with shifted data were cleared, resulting in a total of 52,582 rows cleaned.
+- Team discussions explored the decision to use either the optimized dataset or the original, with flexibility in altering target and feature columns for neural network model training.
+
+# Model Training 
+- Faced challenges in scaling the data with all categories in Google Colab.
+- Experimented with various category limits to address the scaling issues.
+- Settled on a feasible range that ultimately resulted in an impressive 99% accuracy.
+- Emphasized the importance of limiting categories due to machine limitations.
+- Ensured meaningful results by prioritizing categories based on counts.
 
 
 # Background Information 
