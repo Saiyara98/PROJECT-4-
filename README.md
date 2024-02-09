@@ -67,14 +67,8 @@ datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7T
 # Presentation 
 
 
-# Links 
-- https://pixelfy.me/blog/amazon-choice-vs-best-seller/#:~:text=As%20obvious%20from%20the%20name,Best%20Seller%20Rank%20(BSR)
-- https://www.threecolts.com/blog-articles/amazon-best-seller-rank
-- https://archive.ics.uci.edu/
-- https://sell.amazon.com/blog/amazon-best-sellers-rank
 
-
-- Data classification
+# Data classification
     - Picked top 10 and bottom 10 products based on last month sold/reviews category to decide on classification targets
             (The model demonstrates meaningful predictive power at least 75% classification accuracy)
         
@@ -102,4 +96,10 @@ datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7T
             Pogo Sticks  Hopping Toys
             Swimming Pool  Outdoor Water Toys
 
+
+# Links 
+- https://pixelfy.me/blog/amazon-choice-vs-best-seller/#:~:text=As%20obvious%20from%20the%20name,Best%20Seller%20Rank%20(BSR)
+- https://www.threecolts.com/blog-articles/amazon-best-seller-rank
+- https://archive.ics.uci.edu/
+- https://sell.amazon.com/blog/amazon-best-sellers-rank
 
