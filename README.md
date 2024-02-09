@@ -1,51 +1,70 @@
 # PROJECT-4-GROUP 9 
 
 # Contributers
-- Ibsar Hashmi
-- Omar Salloum
 - Olufemi Olarewaju
 - Saiyara Islam 
+- Omar Salloum
+- Ibsar Hashmi
+
 
 # Overview of the Analysis 
 
-
 Model Optimization:
-Cutoff based on lowest value counts:
+Cutoff based on 7000 counts and above per category:
 
-categoryName	Value Counts
-Outdoor Lighting Products	53
-International Food Market	180
+total 150 category of which, top 10:,
 
+categoryName                            Value Counts
+Baby                                     24077
+Luggage  Travel Gear                     22449
+Handmade Home Décor                      19143
+Handmade Kitchen  Dining                 19074
+Handmade Jewellery                       18545
+Beauty                                   18320
+Men's Jewelry                            17969
+Women's Watches                          17386
+Boys                                     17233
+Electronics                              16393
 
-Water Coolers, Filters  Cartridges	526
-Girls	559
-Pogo Sticks  Hopping Toys	688
+Bottom 10 categories:,
 
+categoryName                            Value Counts
+Men's Clothing                            9660
+Automotive Tires  Wheels                  9482
+Mailboxes  Accessories                    9329
+Boating  Watersports                      9300
+Women's Clothing                          9298
+RV Parts  Accessories                     9259
+DVD Players  Recorders                    9244
+Pet Supplies                              9224
+Power Transmission Products               9102
+Patio, Lawn  Garden                       9037
 
-Handmade Toys  Games	1537
-TV Accessories	1656
-Scaffolding Equipment	1772
-Play Sets  Playground Equipment	1925
-Cigarette Lighters	2366
-Automotive Care	2514
-Job Site Lighting	2696
-Paper  Plastic Household Supplies	2843
-Breakfast Cereal	2949
-Outdoor DÃ©cor	3015
-Coffee, Tea  Espresso	3082
-Automotive	3169
-Women's Accessories	3483
-Home  Kitchen	3519
-Kitchen Storage  Organization	3551
-Bath Products	3590
-![image](https://github.com/Saiyara98/PROJECT-4-/assets/141441445/296bae43-9dd8-4044-ba3c-a2da821df260)
+The features of this model included:
 
+* boughtInLastMonth
+* titleLength
+* categoryName
+* Price
+* stars
+* reviews
 
-# Dataset Optimization 
-- A parquet transformation was applied to the Amazon dataset, removing unnecessary columns such as asin, description, product URL, and image URL.
-- Two CSVs were produced—one with the 'boughtLastMonth' column removed and another without.
-- Error rows with shifted data were cleared, resulting in a total of 52,582 rows cleaned.
-- Team discussions explored the decision to use either the optimized dataset or the original, with flexibility in altering target and feature columns for neural network model training.
+The target of this model was isBestSeller and the purpose of the model was to determine whether, with the column features available from the dataset, would the neural network model be able to classify categories to "isBestSeller" over 75% or not.
+
+Variables removed from the input data included the ASIN (product ID), product description (changed to product description length instead and posted as titleLength) as well as product and image URLs.
+
+Dataset was handled in Pyspark due to 2+ million rows of information.
+
+The neural network consisted of 3 layers, two inner layers of a single node each (tried and test with multiple nodes as well) with a single output node.
+both inner layers of a node each ran with a "relu" activation while the output node ran on a "sigmoid" activation.
+
+The runs were 100 Epochs however less than 20 Epochs would have derived the same results.
+
+The model hit the target performance of 75% and delivered 99.99% accuracy with a validation loss of 0.018%
+
+Steps to increase model performance (what other methods were tried)
+--
+
 
 # Model Training 
 - Faced challenges in scaling the data with all categories in Google Colab.
@@ -54,53 +73,12 @@ Bath Products	3590
 - Emphasized the importance of limiting categories due to machine limitations.
 - Ensured meaningful results by prioritizing categories based on counts.
 
-
-# Background Information 
-
-Dataset Optimization
-performed a parquet transformation on the amazon dataset. removed asin, description, product url, and image url. produced two csvs, one with boughtLastMonth column removed and the other without. cleared error rows with shifted data. total of 52582 rows cleared. datasets had rows with missing values that the model will pick up as 0s.
-
-Discussed with the team to either use these data set or use the original and use different target and feature columns to run the neural network model as that works as well.
-
-datasets optimized and cleaned: https://drive.google.com/drive/folders/1qSx7CM7TZl_ZcG_hKWsbitTM4n4vgMRW?usp=sharing
-
-
-
-# Data classification
-    - Picked top 10 and bottom 10 products based on last month sold/reviews category to decide on classification targets
-            (The model demonstrates meaningful predictive power at least 75% classification accuracy)
-        
-        - Top 10 based on reviews
-            Electronics
-            Bedding
-            Home  Kitchen
-            Televisions  Video
-            Beauty
-            Data Storage
-            Automotive Care
-            Pet Supplies
-            Men's Shoes
-            Printer Accessories
-        
-        - Bottom 10 based on reviews
-            Industrial  Scientific
-            Motorcycle Accessories  Parts
-            Automotive Tires  Wheels
-            Dishwashing Supplies
-            Arts  Crafts Supplies
-            Men's Shoes
-            Women's Shoes
-            Fresh Flowers  Indoor Plants
-            Pogo Sticks  Hopping Toys
-            Swimming Pool  Outdoor Water Toys
-
 # Presentation 
+Link: https://docs.google.com/presentation/d/1hC79vpHBMCeMz90v7cKOk7tVNw9jDoI7L7W_FkEnd1U/edit#slide=id.g1f0e066efc7_0_194
 
 
-
-# Links 
+# References 
 - https://pixelfy.me/blog/amazon-choice-vs-best-seller/#:~:text=As%20obvious%20from%20the%20name,Best%20Seller%20Rank%20(BSR)
 - https://www.threecolts.com/blog-articles/amazon-best-seller-rank
 - https://archive.ics.uci.edu/
 - https://sell.amazon.com/blog/amazon-best-sellers-rank
-
