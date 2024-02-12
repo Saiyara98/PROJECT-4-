@@ -64,7 +64,10 @@ The model hit the target performance of 75% and delivered 99.99% accuracy with a
 
 Steps to increase model performance (what other methods were tried)
 --
-
+- Added extra layers
+  - Resulted in increased training accuracy but test accuracy dropped (Overfitting)
+- Doubled neurons to 60
+  - performance stayed the same with added computational time
 
 # Model Training 
 - Faced challenges in scaling the data with all categories in Google Colab.
