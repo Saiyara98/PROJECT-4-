@@ -60,7 +60,7 @@ both inner layers of a node each ran with a "relu" activation while the output n
 
 The runs were 100 Epochs however less than 20 Epochs would have derived the same results.
 
-The model hit the target performance of 75% and delivered 99.99% accuracy with a validation loss of 0.018%
+The model hit the target performance of 75% and delivered ~82% accuracy with a recall of ~82%.
 
 Steps to increase model performance (what other methods were tried)
 --
