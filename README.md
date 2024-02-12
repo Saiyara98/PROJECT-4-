@@ -72,7 +72,6 @@ Steps to increase model performance (what other methods were tried)
 # Model Training 
 - Faced challenges in scaling the data with all categories in Google Colab.
 - Experimented with various category limits to address the scaling issues.
-- Settled on a feasible range that ultimately resulted in an impressive 99% accuracy.
 - Emphasized the importance of limiting categories due to machine limitations.
 - Ensured meaningful results by prioritizing categories based on counts.
 
